@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body style="background-color: aqua;">
+    <section class="card" style="border: 1px solid #000;background-color: white; width: 13vw; height: 15.5vh;margin: 0 5em 0 5em;">
+        <% if (students.length > 0) { %>
+            <% students.map((student) => { %>
+                <p style="margin: .5em">
+                    <span>
+                        First Name: <%= student.FirstName%>
+                    </span>
+                        <br>
+                    <span>
+                        Last Name: <%= student.LastName%>
+                    </span>
+                    <br>
+                    <span>
+                        Score: <%= student.Score%>
+                    </span>
+                    <br>
+                    <span>
+                        State: <%= student.State%>
+                    </span>
+                    <br>
+                    <span>
+                        Nationality: <%= student.Nationality%>
+                    </span>
+                    
+                </p>
+        <% }) %>
+    
+                <% } else { %>
+                    <h3>No Students to show</h3>
+                <% } %>
+    
+    </section>
+    <section class="card2" style="border: 1px solid #000;background-color: white; width: 13vw; height: 14.5vh;margin: 0 5em 0 5em;">
+        
+    </section>
+    <section class="card3" style="border: 1px solid #000;background-color: white; width: 13vw; height: 14.5vh;margin: 0 5em 0 5em;">
+
+    </section>
+    <section class="card4" style="border: 1px solid #000;background-color: white; width: 13vw; height: 15vh;margin: 0 5em 0 5em;">
+
+    </section>
+    <section class="card5" style="border: 1px solid #000;background-color: white; width: 13vw; height: 16vh;margin: 0 5em 0 5em;">
+
+    </section>
+</body>
+</html>
